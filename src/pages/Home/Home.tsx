@@ -153,7 +153,7 @@ const Home = () => {
                     </table>
                 </div>
                 <div>
-                    <p>{Telegram.WebApp.initData ? Telegram.WebApp.initData: '[Telegram.WebApp.initData]'}</p>
+                    <p>{Telegram.WebApp.initDataUnsafe.user?.usernames ? Telegram.WebApp.initDataUnsafe.user.usernames: '[Telegram.WebApp.initDataUnsafe.user?.usernames]'}</p>
                 </div>
             </div>
         </div>
