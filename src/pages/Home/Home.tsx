@@ -152,6 +152,9 @@ const Home = () => {
                         </tbody>
                     </table>
                 </div>
+                <div>
+                    <p>{Telegram.WebApp.initData ? Telegram.WebApp.initData: '[Telegram.WebApp.initData]'}</p>
+                </div>
             </div>
         </div>
     )
