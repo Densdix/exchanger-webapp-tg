@@ -1,6 +1,7 @@
 import React from 'react'
 
 const Home = () => {
+    const data = Telegram.WebApp.initData
     return (
         <div className="">
             <nav className="bg-white border-b border-gray-300">
@@ -95,7 +96,7 @@ const Home = () => {
                             </div>
 
                             {/* <!-- Caja pequeña 3 --> */}
-                            <div
+                            <div onClick={() => Telegram.WebApp.close()}
                                 className="flex-1 bg-gradient-to-r from-cyan-400 to-cyan-600 rounded-lg flex flex-col items-center justify-center p-2 border border-gray-200 m-2">
                                 <i className="fas fa-qrcode text-white text-4xl"></i>
                                 <p className="text-white">Обменять</p>
