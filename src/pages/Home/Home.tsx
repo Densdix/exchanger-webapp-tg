@@ -155,7 +155,8 @@ const Home = () => {
                 <div>
                     <p><span>first_name: </span>{Telegram.WebApp.initDataUnsafe.user?.first_name}</p>
                     <p><span>last_name: </span>{Telegram.WebApp.initDataUnsafe.user?.last_name}</p>
-                    <p><span>usernames: </span>{Telegram.WebApp.initDataUnsafe.user?.usernames}</p>
+                    {/* @ts-ignore */}
+                    <p><span>usernames: </span>{Telegram.WebApp.initDataUnsafe.user?.username}</p>
                     <p><span>language_code: </span>{Telegram.WebApp.initDataUnsafe.user?.language_code}</p>
                     <p><span>id: </span>{Telegram.WebApp.initDataUnsafe.user?.id}</p>
                     <p><span>auth_date: </span>{Telegram.WebApp.initDataUnsafe.auth_date}</p>
